@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@400;500&display=swap");
+
+.moments-section {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  background: #f8e8cc;
+  color: #351d14;
+  padding: 120px 40px;
+
+}
+
+.moments-header {
+  margin-bottom: 58px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 4px;
+
+  color: #a35e31;
+}
+
+.moments-header h1 {
+  margin: 0;
+
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: clamp(44px, 5.2vw, 88px);
+  font-weight: 100;
+  line-height: 0.95;
+  letter-spacing: -2px;
+}
+
+
+.moments-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  background: #fffaf2;
+
+  border: 1px solid #e2c6a8;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #fffaf2;
+
+  border: 1px solid rgba(120, 75, 45, 0.18);
+}
+
+.card {
+  position: relative;
+
+  height: 216px;
+  padding: 47px 37px 30px;
+
+  background: #fffaf2;
+
+border-right: 1px solid rgba(80, 45, 25, 0.10);
+border-bottom: 1px solid rgba(80, 45, 25, 0.10);
+
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+
+.card:nth-child(3n) {
+  border-right: none;
+}
+
+.card:nth-child(n + 4) {
+  border-bottom: none;
+}
+
+.moment-card {
+  position: relative;
+
+  height: 215px;
+  box-sizing: border-box;
+
+  padding: 47px 37px 30px;
+
+  background: #fffaf2;
+
+  cursor: pointer;
+
+  border-right: 1px solid #dfc1a2;
+  border-bottom: 1px solid #dfc1a2;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+
+.moment-card:nth-child(3n) {
+  border-right: none;
+}
+
+
+.moment-card:nth-child(n + 4) {
+  border-bottom: none;
+}
+
+
+
+.moment-card:hover {
+  background: #ead2b2;
+}
+
+.moment-number {
+  margin-bottom: 8px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+
+  color: #a7673c;
+}
+
+
+.moment-card h2 {
+  margin: 0;
+
+  max-width: 500px;
+
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: 37px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+
+  color: #26140e;
+}
+
+
+.moment-arrow {
+  position: absolute;
+
+  left: 38px;
+  bottom: 35px;
+
+  font-family: Arial, sans-serif;
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 1;
+
+  color: #321b13;
+
+  transition: transform 0.3s ease;
+}
+
+.moment-card:hover .moment-arrow {
+  transform: translateX(7px);
+}
+
+
+.moment-card:focus-visible {
+  outline: 2px solid #a35e31;
+  outline-offset: -3px;
+}
+
+
+@media (max-width: 900px) {
+  .moments-section {
+    padding: 120px 40px;
+  }
+
+  .moments-header {
+    margin-bottom: 40px;
+  }
+
+  .moment-card {
+    height: 200px;
+    padding: 35px 25px;
+  }
+
+  .moment-card h2 {
+    font-size: 30px;
+  }
+
+  .moment-arrow {
+    left: 25px;
+    bottom: 28px;
+  }
+}
+
+
+@media (max-width: 650px) {
+  .moments-section {
+    padding: 28px 16px;
+  }
+
+  .moments-header {
+    margin-bottom: 30px;
+  }
+
+  .eyebrow {
+    font-size: 11px;
+    letter-spacing: 3px;
+  }
+
+  .moments-header h1 {
+    font-size: 48px;
+    letter-spacing: -1px;
+  }
+
+  .moments-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .moment-card {
+    height: 190px;
+
+    border-right: none;
+    border-bottom: 1px solid #dfc1a2;
+  }
+
+  .moment-card:nth-child(3n) {
+    border-right: none;
+  }
+
+  .moment-card:nth-child(n + 4) {
+    border-bottom: 1px solid #dfc1a2;
+  }
+
+  .moment-card:last-child {
+    border-bottom: none;
+  }
+
+  .moment-card h2 {
+    font-size: 31px;
+  }
+}

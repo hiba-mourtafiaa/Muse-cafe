@@ -1,0 +1,37 @@
+.menu-hero {
+  position: relative;
+  width: 100%;
+  min-height: 355px;
+  background-image: url("../assets/hero.jfif");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.menu-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(48, 25, 14, 0.78);
+  z-index: 1;
+}
+
+.menu-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 55px 30px;
+}
+
+.menu-label {
+  display: block;
+  margin-bottom: 5px;
+  color: #b88643;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+}

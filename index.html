@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MÜZE Cafe</title>
+  </head>
+
+  <body>
+
+    <div id="root"></div>
+
+    <div id="google_translate_element"></div>
+
+    <script>
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "tr",
+            includedLanguages: "tr,en",
+            autoDisplay: false
+          },
+          "google_translate_element"
+        );
+      }
+    </script>
+
+    <script
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+
+    <script type="module" src="/src/main.jsx"></script>
+
+  </body>
+</html>
